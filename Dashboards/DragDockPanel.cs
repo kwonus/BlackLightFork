@@ -88,7 +88,11 @@ namespace Blacklight.Controls.Wpf
         }
 
         // KCW 6/30/2021
-        public int PanelLifetime { get; set; }
+        public UInt64 PanelLifetime { get; set; }
+        // KCW 7/01/2021
+        public UInt16 PanelReference { get; set; }
+        // KCW 7/01/2021
+        public bool Modernized { get; set; }
 
         /// <summary>
         /// Gets a value indicating whether the panel is maximised.
