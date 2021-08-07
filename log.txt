@@ -1,0 +1,44 @@
+2021-08-06 22:38:55.614 -04:00 [INF] Loaded 5 extensions
+2021-08-06 22:38:56.318 -04:00 [INF] MSBuild registered from C:\Program Files\dotnet\sdk\5.0.301\
+2021-08-06 22:38:56.605 -04:00 [INF] Found Visual Studio v16.10.31410.357 [C:\Program Files (x86)\Microsoft Visual Studio\2019\Community]
+2021-08-06 22:38:57.457 -04:00 [INF] Initializing upgrade step Select an entrypoint
+2021-08-06 22:38:57.460 -04:00 [INF] Setting entrypoint to only project in solution: C:\Users\kevin\source\repos\Blacklight.Controls.Wpf\Blacklight.Controls.Wpf.csproj
+2021-08-06 22:38:57.465 -04:00 [INF] Initializing upgrade step Select project to upgrade
+2021-08-06 22:38:57.481 -04:00 [INF] Initializing upgrade step Back up project
+2021-08-06 22:39:05.002 -04:00 [INF] Applying upgrade step Back up project
+2021-08-06 22:39:11.880 -04:00 [INF] Backing up C:\Users\kevin\source\repos\Blacklight.Controls.Wpf to C:\Users\kevin\source\repos\Blacklight.Controls.Wpf.backup
+2021-08-06 22:39:11.913 -04:00 [WRN] Could not copy file C:\Users\kevin\source\repos\Blacklight.Controls.Wpf\log.txt due to 'The process cannot access the file 'C:\Users\kevin\source\repos\Blacklight.Controls.Wpf\log.txt' because it is being used by another process.'
+2021-08-06 22:39:13.082 -04:00 [INF] Project backed up to C:\Users\kevin\source\repos\Blacklight.Controls.Wpf.backup
+2021-08-06 22:39:13.086 -04:00 [INF] Upgrade step Back up project applied successfully
+2021-08-06 22:39:16.685 -04:00 [INF] Initializing upgrade step Convert project file to SDK style
+2021-08-06 22:39:23.798 -04:00 [INF] Applying upgrade step Convert project file to SDK style
+2021-08-06 22:39:23.801 -04:00 [INF] Converting project file format with try-convert, version 0.9.232202
+2021-08-06 22:39:25.432 -04:00 [INF] [dotnet] Conversion complete!
+2021-08-06 22:39:25.783 -04:00 [INF] Project file converted successfully! The project may require additional changes to build successfully against the new .NET target.
+2021-08-06 22:39:26.829 -04:00 [INF] Upgrade step Convert project file to SDK style applied successfully
+2021-08-06 22:39:29.823 -04:00 [INF] Initializing upgrade step Clean up NuGet package references
+2021-08-06 22:39:31.143 -04:00 [INF] Reference to .NET Upgrade Assistant analyzer package (Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, version 0.2.237901) needs added
+2021-08-06 22:39:31.152 -04:00 [INF] Packages to be added: Operation { Item = Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.2.237901, OperationDetails = OperationDetails { Risk = None, Details = System.Linq.EmptyPartition`1[System.String] } }
+2021-08-06 22:39:38.256 -04:00 [INF] Applying upgrade step Clean up NuGet package references
+2021-08-06 22:39:38.262 -04:00 [INF] Adding package reference: Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.2.237901
+2021-08-06 22:39:39.472 -04:00 [INF] Upgrade step Clean up NuGet package references applied successfully
+2021-08-06 22:39:46.657 -04:00 [INF] Initializing upgrade step Update TFM
+2021-08-06 22:39:46.664 -04:00 [INF] Recommending Windows TFM net5.0-windows because the project either has Windows-specific dependencies or builds to a WinExe
+2021-08-06 22:39:46.666 -04:00 [INF] TFM needs updated to net5.0-windows
+2021-08-06 22:39:53.287 -04:00 [INF] Applying upgrade step Update TFM
+2021-08-06 22:39:53.291 -04:00 [INF] Recommending Windows TFM net5.0-windows because the project either has Windows-specific dependencies or builds to a WinExe
+2021-08-06 22:39:58.060 -04:00 [INF] Updated TFM to net5.0-windows
+2021-08-06 22:39:58.061 -04:00 [INF] Upgrade step Update TFM applied successfully
+2021-08-06 22:40:00.364 -04:00 [INF] Initializing upgrade step Update NuGet Packages
+2021-08-06 22:40:01.595 -04:00 [INF] Adding Microsoft.Windows.Compatibility 5.0.2
+2021-08-06 22:40:01.598 -04:00 [INF] Packages to be added: Operation { Item = Microsoft.Windows.Compatibility, Version=5.0.2, OperationDetails = OperationDetails { Risk = None, Details = System.Linq.EmptyPartition`1[System.String] } }
+2021-08-06 22:40:09.706 -04:00 [INF] Applying upgrade step Update NuGet Packages
+2021-08-06 22:40:09.707 -04:00 [INF] Adding package reference: Microsoft.Windows.Compatibility, Version=5.0.2
+2021-08-06 22:40:14.923 -04:00 [INF] Marking package System.Data.DataSetExtensions for removal because it appears to be a transitive dependency
+2021-08-06 22:40:14.939 -04:00 [INF] Removing outdated package reference: System.Data.DataSetExtensions, Version=4.5.0
+2021-08-06 22:40:16.427 -04:00 [INF] Upgrade step Update NuGet Packages applied successfully
+2021-08-06 22:40:20.521 -04:00 [INF] Initializing upgrade step Add template files
+2021-08-06 22:40:20.529 -04:00 [INF] 0 expected template items needed
+2021-08-06 22:40:20.536 -04:00 [INF] Initializing upgrade step Update source code
+2021-08-06 22:40:22.376 -04:00 [INF] Initializing upgrade step Move to next project
+2021-08-06 22:40:31.318 -04:00 [INF] Saving upgrade progress file at C:\Users\kevin\source\repos\Blacklight.Controls.Wpf\.upgrade-assistant
