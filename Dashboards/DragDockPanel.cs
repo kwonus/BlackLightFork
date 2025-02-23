@@ -158,24 +158,29 @@ namespace Blacklight.Controls.Wpf
         /// </summary>
         public virtual void Maximize()
         {
-            // Bring the panel to the front
-            Canvas.SetZIndex(this, CurrentZIndex++);
-
-            bool raiseEvent = this.panelState != PanelState.Maximized;
-            this.panelState = PanelState.Maximized;
-
-            this.IsMaximized = true;
-
-            // Fire the panel maximized event
-            if (raiseEvent && this.Maximized != null)
+            try
             {
-                this.Maximized(this, EventArgs.Empty);
+                // Bring the panel to the front
+                Canvas.SetZIndex(this, CurrentZIndex++);
+
+                bool raiseEvent = this.panelState != PanelState.Maximized;
+                this.panelState = PanelState.Maximized;
+
+                this.IsMaximized = true;
+
+                // Fire the panel maximized event
+                if (raiseEvent && this.Maximized != null)
+                {
+                    this.Maximized(this, EventArgs.Empty);
+                }
+                if (this.Content != null)
+                {
+                    var flow = (FlowDocumentScrollViewer)this.Content;
+                    //flow.Foreground = new SolidColorBrush(Colors.White);
+                }
             }
-            if (this.Content != null)
-            {
-                var flow = (FlowDocumentScrollViewer)this.Content;
-                //flow.Foreground = new SolidColorBrush(Colors.White);
-            }
+            catch
+            { }
         }
 
         /// <summary>
@@ -214,25 +219,29 @@ namespace Blacklight.Controls.Wpf
         /// </summary>
         public virtual void Restore()
         {
-            bool raiseEvent = this.panelState != PanelState.Restored;
-            this.panelState = PanelState.Restored;
+            try
+            {
+                bool raiseEvent = this.panelState != PanelState.Restored;
+                this.panelState = PanelState.Restored;
 
-            this.IsMaximized = false;
+                this.IsMaximized = false;
 
-            // Fire the panel minimized event
-            if (raiseEvent && this.Restored != null)
-            {
-                this.Restored(this, EventArgs.Empty);
+                // Fire the panel minimized event
+                if (raiseEvent && this.Restored != null)
+                {
+                    this.Restored(this, EventArgs.Empty);
+                }
+                if (this.Content != null)
+                {
+                    var flow = (FlowDocumentScrollViewer)this.Content;
+                    //flow.Foreground = new SolidColorBrush(Colors.White);
+                }
+                if (CollapseOnMinize)
+                {
+                    this.Visibility = Visibility.Visible;
+                }
             }
-            if (this.Content != null)
-            {
-                var flow = (FlowDocumentScrollViewer)this.Content;
-                //flow.Foreground = new SolidColorBrush(Colors.White);
-            }
-            if (CollapseOnMinize)
-            {
-                this.Visibility = Visibility.Visible;
-            }
+            catch { }
         }
 
         /// <summary>
